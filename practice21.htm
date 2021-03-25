@@ -1,0 +1,424 @@
+<html>
+<head>
+<title>InterBranch</title>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="font/fertigopro/stylesheet.css" type="text/css" charset="utf-8" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <style>
+
+.upper-modal{
+  width: 100%;
+  
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 114%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+    
+
+
+.modal-inside{
+  border-radius: 5px;
+  background: #444444;
+  
+  float: center;
+  margin-top: 5%;
+  text-align: center;
+  min-height: 70%;
+  min-width: 60%;
+  max-width: 60%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: #aa0000 solid 2px;
+}
+
+.modal-inside p{
+  padding: 0px 45px;
+  
+}
+
+.close{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  color: #000000;
+  font-size: 28px;
+}
+
+.close:hover,.close:focus{
+  cursor: pointer;
+}
+
+.lists{
+  text-align: left;
+  margin-left: 100px; 
+  margin-right: 90px; 
+}
+
+.social-buttons a{ 
+
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+
+.abc{
+     box-shadow:10px 10px 20px 5px gray; 
+     background-color:#005560;
+     margin: 10 px;
+}
+.a{
+   text-align:center; 
+   font-size: 25px;
+   background-color: #001140;
+   height: 50px; 
+   margin: 10px;
+   padding: 3px;
+   width: 300px
+}
+h2{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+  </style>
+
+
+</head>
+
+<body style="background-color: #005560;">
+<div class="container-fluid text-center" style="margin: 0;padding: 10px ; background-color:#001140">
+  <!--1.1-->
+  <div class="col-lg-2" style="padding: 5px;"> 
+    <img src="images/uni_logo.png" height="120px" width="120px" class="img-responsive center-block" />
+  </div>
+  
+  <!--1.2-->
+  <div class="col-lg-8" style="background-color: ; padding: 5px;" align="center">
+  <h1 class="center-block " style="color: white;">Sports Sub Council</h1>
+  <h3 style="color: white;">Madan Mohan Malaviya University of Technology</h3>
+  </div>
+  
+  <!--1.3-->
+  <div class="col-lg-2">
+  <img src="images/logosports.png" height="118px" width="130px" class="img-responsive center-block"/>
+  </div>
+</div>
+<nav class="navbar navbar-inverse" style="border:3px solid #aa0000">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="subcouncil.html">Sports Sub Council</a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="homepage.html">| Home |</a></li>
+                    <li ><a href="aayaas2020.html">| AAYAAS-2020 |</a></li>
+                    <li class="active" ><a href="interbranch.html" >| Inter-Branch Sports |</a></li>
+                    <li><a href="gallery.htm">| Gallery |</a></li>
+                    <li><a href="contact.htm">| Contact |</a></li>
+                    <li><a href="members.html">| Members |</a></li>
+                </ul>
+                </div>
+  </nav>
+  
+</head>
+<div class="container abc" style="text-align: center; height: 100%;">
+<div class="col-lg-12" style=" font-size: 20px; background-color: orange; ">
+<b>INTERBRANCH TOURNAMENTS (2019-2020)</b>
+</div>  
+  <div class="container text-center"style="padding: 70px 20px;">
+      
+      <div >
+      <a id="btn-cricket" class="btn btn-primary a" align="center"><img src="https://img.icons8.com/material-outlined/24/ffffff/baseball-player.png"/>
+      Cricket </a>
+      </div></br>
+     
+      <div>
+      <a id="btn-football" class="btn btn-primary a" align="center"><img src="https://img.icons8.com/material-outlined/24/ffffff/football.png"/>
+      Football</a>
+      </div></br>
+      
+      <div  >
+      <a id="btn-basket" class="btn btn-primary a" align="center"><img src="https://img.icons8.com/material-outlined/24/ffffff/basketball-net.png"/>
+      Basketball</a>
+      </div></br>
+      
+      <div >
+      <a id="btn-volley" class="btn btn-primary a" align="center"><span class="iconify" data-icon="fa-solid:volleyball-ball" data-inline="false"></span>
+      Volleyball</a>
+      </div></br>
+
+      <div  >
+      <a id="btn-kabaddi" class="btn btn-primary a" align="center"><span class="iconify" data-icon="mdi-kabaddi" data-inline="false"></span>
+      Kabaddi</a>
+      </div></br>
+      </div>
+      
+
+
+  <div class="upper-modal">
+  <div id="modal-cricket" class="modal">
+    <span id="closed-cricket" class="close"><img src="images/cross.png" /></span>
+    <div class="col-lg-6 modal-inside" align="center" >
+      <h2 >Cricket</h2>
+      
+      <pre style="padding: 0px 45px;font-family: serif; font-size: 15px;">
+      The league matches of cricket tournament were held in November and finals were held 
+      on 22-01-20 in Cricket ground under the guidance of faculty in charge
+      Sri. Sunil Kumar Yadav (MED). The results of three days tournament are-
+      Category: Boys – 
+      1.Computer Science and Engineering (CSE)
+      2.Electronics and Communication Engineering (ECE)
+      3.Mechanical Engineering (ME)
+      Category: Girls –       
+      1.Computer Science and Engineering (CSE)
+      2.Electronics and Communication Engineering (ECE)
+      3.Chemical Engineering (CHE)
+
+      </pre>
+  </div>
+  </div>
+  </div>
+
+  <!-- Modal Football -->
+  <div class="upper-modal">
+  <div id="modal-football" class="modal">
+    <span id="closed-football" class="close"><img src="images/cross.png" /></span>
+    <div class="modal-inside">
+      <h2 >Football</h2>
+       <pre style="font-family: serif; font-size: 15px; padding: 0px 45px;">
+       It was held on 29-01-20 to 31-01-20under the guidance of Faculty in charge 
+       Sri. Rohit Kumar Tiwari (CSED) in Football ground. The result of this tournament is-
+       1.Electrical Engineering (EE)
+       2.Mechanical Engineering (ME)
+       3. Electronics and Communication Engineering (ECE)
+
+      </pre>
+       
+  </div>
+  </div>
+  </div>
+  
+  <!-- Modal Basketball -->
+  <div class="upper-modal">
+  <div id="modal-basket" class="modal">
+    <span id="closed-basket" class="close"><img src="images/cross.png" /></span>
+    <div class="modal-inside">
+      <h2 >Basketball</h2>
+       <pre style="font-family: serif; font-size: 15px; padding: 0px 45px;">
+    It was held on 10-01-20 to 12-01-20 under the guidance of Faculty in charge 
+    Dr. Prabhakar Tiwari (EED) and Dr.Sneha Gupta (CED) in Basketball court. 
+    The results of three days tournament are-
+    Category: Boys – 
+    1.Civil Engineering (CE) 
+    2.Mechanical Engineering (ME)
+    3.Electronics and Communication Engineering (ECE)
+    Category: Girls –       
+    1.Electronics and Communication Engineering (ECE)
+    2.Civil Engineering (CE)
+    3.Chemical Engineering (CHE)
+    </pre>
+    </div>
+  </div>
+  </div>
+
+  <!-- volleyball -->
+  <div class="upper-modal">
+  <div id="modal-volley" class="modal">
+    <span id="closed-volley" class="close"><img src="images/cross.png" /></span>
+    <div class="modal-inside">
+      <h2>Volleyball</h2>
+      <pre style="font-family: serif; font-size: 15px; padding: 0px 45px;">
+    It was held on 13-01-20 to 15-01-20 under the guidance of faculty in charge 
+    Sri. Shekhar Yadav (EED) and Dr. Swati Gangwar (MED) in Volleyball court. 
+    The results of three days tournament are-
+    Category: Boys – 
+    1.Civil Engineering (CE) 
+    2.Mechanical Engineering (ME)
+    3.Electrical Engineering (EE)
+    Category: Girls –       
+    1.Electronics and Communication Engineering (ECE)
+    2.Mechanical Engineering (ME)
+    3.Computer Science and Engineering (CSE)
+    </pre>
+    </div>
+  </div>
+  </div>
+  
+  <div class="upper-modal">
+  <div id="modal-kabaddi" class="modal">
+    <span id="closed-kabaddi" class="close"><img src="images/cross.png" /></span>
+    <div class="modal-inside" align="center" >
+      <h2>Kabaddi</h2>
+      <pre style="font-family: serif; font-size: 15px; padding: 0px 45px;">
+      It was held on 27-08-19 to 29-08-19 under the guidance of Faculty in charge- Dr. Ravi Kumar Gupta (ASD) in the Kabaddi ground. 
+      The result of the 3-day Interbranch kabaddi Tournament are:
+      Category: Boys-
+      1.Electronics and Communication Engineering (ECE) 
+      2.Civil Engineering (CE)
+      3.Electrical Engineering (EE) 
+      Category: Girls–       
+      1.Chemical Engineering (CHE)
+      2.Electronics and Communication Engineering (ECE)
+      3.Computer Science and Engineering (CSE)
+
+      
+      </pre>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="col-sm-12" style="padding: 70px;" align="center">
+ <div class="social-buttons">
+      <a onclick="Callmsg()"><i class="fab fa-teamspeak"></i></a>
+      <a href="http://www.facebook.com/sportsmmmut"><i class="fab fa-facebook"></i></a>
+      <a href="http://www.instagram.com/sportsmmmut"><i class="fab fa-instagram"></i></a>
+      <a onclick="Mailmsg()"><i class="glyphicon glyphicon-envelope"></i></a>
+</div>
+</div>
+<script>
+    function Callmsg(){
+        alert(" Call : Harsh Pratap Mall (7270048630)")
+    }
+    function Mailmsg(){
+        alert("Gmail ID: sportmmmut@gmail.com")
+    }
+</script>
+
+<script>
+/*! jQuery v2.1.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
+
+var modal1 = document.getElementById('modal-cricket');
+var btn1 = document.getElementById("btn-cricket");
+var span1 = document.getElementById("closed-cricket");
+
+var modal2 = document.getElementById('modal-football');
+var btn2 = document.getElementById("btn-football");
+var span2 = document.getElementById("closed-football");
+
+var modal3 = document.getElementById('modal-basket');
+var btn3 = document.getElementById("btn-basket");
+var span3 = document.getElementById("closed-basket");
+
+var modal4 = document.getElementById('modal-volley');
+var btn4 = document.getElementById("btn-volley");
+var span4 = document.getElementById("closed-volley");
+
+var modal5 = document.getElementById('modal-kabaddi');
+var btn5 = document.getElementById("btn-kabaddi");
+var span5 = document.getElementById("closed-kabaddi");
+
+// When the user clicks on the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+    modal1.tabIndex = '0';
+    modal1.focus();
+}
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+btn2.onclick = function() {
+    modal2.style.display = "block";
+    modal2.tabIndex = '0';
+    modal2.focus();
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+btn3.onclick = function() {
+    modal3.style.display = "block";
+    modal3.tabIndex = '0';
+    modal3.focus();
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+
+btn4.onclick = function() {
+    modal4.style.display = "block";
+    modal4.tabIndex = '0';
+    modal4.focus();
+}
+span4.onclick = function() {
+    modal4.style.display = "none";
+}
+btn5.onclick = function() {
+    modal5.style.display = "block";
+    modal5.tabIndex = '0';
+    modal5.focus();
+}
+span5.onclick = function() {
+    modal5.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+    if (event.target == modal3) {
+        modal2.style.display = "none";
+    }
+}
+
+</script>
+
+
+</body>
+</html>
